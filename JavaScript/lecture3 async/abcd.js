@@ -8,8 +8,14 @@
 
 // setTimeout(callbackFunction,timeInMs)
 // callback function hamesha async code mai answer aa ne ke baad chl ta hai 
+
 console.log("hi");
 setTimeout(function () {
     console.log("hi after 2 second");
 },2000)
 
+// js async nahi hai 
+// js is a singlethread language  
+// sync code main stack mai ja ta hai aur async code side stack mai ja ta hai 
+// jab main stack mai sara code exicute ho ja ta hai fir check kr te hai ki jo async code side stack mai hai wo complete hua ki nahi agar complete hua to us code ko EVENT LOOP se main stake mai move kr ke exicute kr de te hai
+ 
