@@ -66,3 +66,11 @@ let p4 = p3 .then(function(data){
 p4.then(function (data) {
     console.log(data);
 })
+
+// async await
+async function qwerty() {
+    var raw = await fetch("https://randomuser.me/api/");
+    var answ = await raw.json();
+    console.log(answ);
+}
+qwerty();
