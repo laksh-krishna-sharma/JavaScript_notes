@@ -20,7 +20,7 @@ setTimeout(function () {
 // jab main stack mai sara code exicute ho ja ta hai fir check kr te hai ki jo async code side stack mai hai wo complete hua ki nahi agar complete hua to us code ko EVENT LOOP se main stake mai move kr ke exicute kr de te hai
  
 
-// promise
+// promise1
 let ans = new Promise((res,rej)=>{
     var n = Math.floor(Math.random()*10);
 
@@ -39,4 +39,30 @@ ans
 })
 .catch(function () {
     console.log("above");
+})
+
+// Promise2
+let p1 = new Promise((res,rej)=>{
+    return res("ghr ja oo");
+})
+let p2 = p1 .then(function(data){
+    console.log(data);
+    return new Promise((res,rej)=>{
+        return res("khana kha oo");
+    })
+})
+let p3 = p2 .then(function(data){
+    console.log(data);
+    return new Promise((res,rej)=>{
+        return res("room mai ja oo");
+    })
+})
+let p4 = p3 .then(function(data){
+    console.log(data);
+    return new Promise((res,rej)=>{
+        return res("soo ja oo");
+    })
+})
+p4.then(function (data) {
+    console.log(data);
 })
