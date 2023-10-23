@@ -74,3 +74,7 @@ async function qwerty() {
     console.log(answ);
 }
 qwerty();
+
+// concurrency => js mai jab sync aur async code sath mai process ho 
+// parllalism => focus zayada kr te hai diffrent processor par and un ke cores par kaam ko chalaane par 
+// throttling => kisi code ki number of execution ko control kr na 
