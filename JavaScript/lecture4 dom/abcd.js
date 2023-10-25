@@ -14,3 +14,8 @@ a.style.backgroundColor='black'
 a.style.color='red'
 
 // 4) event listener
+a.addEventListener("click",function(){
+    a.innerHTML = 'DOM once again'
+    a.style.backgroundColor='yellow'
+    a.style.color='black'
+})
