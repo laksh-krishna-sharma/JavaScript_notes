@@ -37,3 +37,16 @@ b.addEventListener("click",function(){
     }
     
 })
+
+// agar 3 h1 hai to document.querySelector bs first wale ko select kre ga sab ko ek sath selact kr ne ke liya document.querySelectorAll use kr sak te hai 
+
+// id se select kr ne ke liya document.getElementById use kr sak te hai
+// class se select kr ne ke liya document.getElementByClass use kr sak te hai
+
+// innerHTML mai change tag 1 show ho ga 
+var z = document.querySelector('h1')
+z.innerHTML ='<h1>change tag 1</h1>'
+
+// textContent mai <h2>change tag 2</h2> show  ho ga
+var x = document.querySelector('h2')
+x.textContent = '<h2>change tag 2</h2>'
