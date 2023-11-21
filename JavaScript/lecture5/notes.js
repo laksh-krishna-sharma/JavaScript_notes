@@ -45,3 +45,37 @@ var ans = (function () {
 ans.getter();
 ans.setter(24);
 ans.getter();
+
+// PROTOTYPE -> jab bhi hum ek object bana te hai to us kuch helper properties mill ja te hai automaticaly ban te he (built in functions for every data type in JS)
+
+// PROTOTYPE INHERITANCE -> ek chuld obj pe parent obj ki sari proporties ho na + kuch or extra proporties bhi ho na through prototype
+var human = {
+    canWalk: true,
+    canTalk: true,
+    canFly: false
+};
+var coder = {
+    canCode: true
+};
+coder.__proto__ = human;
+// now coder can also access properties of human 
+console.log(coder.canFly);
+
+
+// ek function jo object ke andar ho ussa method bol te hai
+// THIS keyword -> global aur local variable mai this ki value 'window' ho ti hai
+// lekin method mai this ki value 'object' ho ti hai aur method mai this keyword object ko reffer kr ta hai
+
+
+// CALL , APPLY , BIND -> agar koi ek function aur ek object hai or hume function ke andar ke this ki value ki jagha wo object as value pass kr na hai tab in mai se kisi ka use kr sak te hai
+function abc(val1,val2,val3) {
+    console.log(this,val1,val2,val3);
+}
+abc();
+var obj5 = {
+    name: 'laksh'
+};
+abc.call(obj5,1,2,3);
+abc.apply(obj5,[4,5,6]);
+var bindfun = abc.bind(obj5,7,8,9); //bind -> function aur object ko combine kr ke ek naya function bana de ga or isa store kr na pad ta hai
+bindfun();
