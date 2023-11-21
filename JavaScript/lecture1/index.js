@@ -50,3 +50,23 @@ console.log(m);
 // array_name.splice(index,kitni value hata ni hai)
 m.splice(2,1);
 console.log(m);
+
+// object -> key value pair mai details hold kr na ke liya use kr te hai object
+
+// 1) blank obj 
+var obj1 = {};
+
+// 2) filled obj
+var me = {
+    name:'laksh',
+    age:18
+};
+
+// accessing a value in obj 
+
+// a) Dot notation
+console.log(me.name);
+// b) Bracket notation 
+var brc = 'name';
+me[brc] = 'zaid';
+console.log(me['name']);
