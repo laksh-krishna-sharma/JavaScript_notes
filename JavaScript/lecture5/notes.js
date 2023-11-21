@@ -79,3 +79,6 @@ abc.call(obj5,1,2,3);
 abc.apply(obj5,[4,5,6]);
 var bindfun = abc.bind(obj5,7,8,9); //bind -> function aur object ko combine kr ke ek naya function bana de ga or isa store kr na pad ta hai
 bindfun();
+
+// PURE FUNCTION -> jo same input ke liya same output return kre and global variable ki value andar change/update na kre 
+// IMPURE FUNCTION -> jo same input ke liya same output return na kre and global variable ki value andar change/update kre 
