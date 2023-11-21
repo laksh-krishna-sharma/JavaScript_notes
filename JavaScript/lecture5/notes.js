@@ -22,3 +22,26 @@ var bis3 = new biscuitMold('green');
 console.log(bis1);
 console.log(bis2);
 console.log(bis3);
+
+// JS mai functions FIRST CLASS FUNCTIONS variable ke jisa treat ho te hai matlab funtctions ko store kr sak te hai kisi or variable mai us function ko he as a argument pass kr sak te hai 
+
+// NEW keyword -> blank object bana do mostly new ke sath function fun ho ga to function mai jaha jaha this likha ho to usa key value pair bana do
+
+// iife -> immediatly invoked function expression
+// iife ek function chlane ka method hai jis se hum private value bana te hai
+var ans = (function () {
+    var privateval = 12;
+
+    return{
+        getter:function() {
+            console.log(privateval);
+        },
+        setter:function(val){
+            privateval = val;
+        }
+    }
+})()
+// the value of privateval can't be accessed directly
+ans.getter();
+ans.setter(24);
+ans.getter();
