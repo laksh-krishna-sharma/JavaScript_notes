@@ -48,7 +48,7 @@ ans.getter();
 
 // PROTOTYPE -> jab bhi hum ek object bana te hai to us kuch helper properties mill ja te hai automaticaly ban te he (built in functions for every data type in JS)
 
-// PROTOTYPE INHERITANCE -> ek chuld obj pe parent obj ki sari proporties ho na + kuch or extra proporties bhi ho na through prototype
+// PROTOTYPE INHERITANCE -> ek child obj pe parent obj ki sari proporties ho na + kuch or extra proporties bhi ho na through prototype
 var human = {
     canWalk: true,
     canTalk: true,
